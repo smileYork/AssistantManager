@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 每个button被选中时背景颜色的改变效果 -->
+    <item android:drawable="@color/white" android:state_checked="true"/>
+
+</selector>

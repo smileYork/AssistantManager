@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:Android="http://schemas.android.com/apk/res/android">
+
+    <!-- state_selected为选中时的背景，不一定是单击     #40E0D0   #20B2AA-->
+    <item Android:state_selected="true"><shape>
+            <gradient Android:angle="270" Android:endColor="#20B2AA" Android:startColor="@color/cornflowerblue" />
+
+            <corners Android:radius="8dp" />
+        </shape></item>
+
+    <!-- 选中时的颜色变化情况 -->
+    <item Android:state_pressed="true"><shape>
+            <gradient Android:angle="270" Android:endColor="#20B2AA" Android:startColor="@color/cornflowerblue" />
+
+
+            <corners Android:radius="8dp" />
+        </shape></item>
+    <!-- 初始颜色背景 -->
+    <item><shape>
+            <gradient Android:angle="270" Android:endColor="#5f9ea0" Android:startColor="@color/cornflowerblue" />
+
+
+            <corners Android:radius="8dp" />
+        </shape></item>
+
+</selector>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/tv_item_sale_list_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.35"
+        android:padding="20dp"
+        android:text="12345678912345679800" />
+
+    <TextView
+        android:id="@+id/tv_item_sale_list_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.65"
+        android:ems="20"
+        android:gravity="center"
+        android:text="大闸蟹大礼包1" />
+
+    <TextView
+        android:id="@+id/tv_item_sale_list_money"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.18"
+        android:gravity="center"
+        android:text="888.00" />
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 顶部带圆角 白色背景 灰色边框 无下边框 长方体 -->
+<!--
+     solid    填充。
+	 stroke   描边。
+	 corners  圆角。#AEEEEE
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape>
+            <solid android:color="@color/white" />
+
+            <stroke
+                android:width="4dp"
+                android:color="@color/orange" />
+        </shape>
+    </item>
+    <item
+        android:bottom="3dp"
+        android:left="3dp"
+        android:right="3dp"
+        android:top="3dp">
+        <shape>
+            <gradient
+                android:angle="360"
+                android:endColor="@color/white"
+                android:startColor="@color/white" />
+
+            <size
+                android:height="40dp"
+                android:width="50dp" />
+        </shape>
+    </item>
+
+</layer-list>

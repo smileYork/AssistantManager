@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/title"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true" >
+
+    <ImageButton
+        android:id="@+id/img_bt_title_bar_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/app_name"
+        android:padding="6dp"
+        android:src="@drawable/white_left" />
+
+    <TextView
+        android:id="@+id/tv_title_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="二维码扫描"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

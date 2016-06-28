@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.35" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_main_show"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:flipInterval="30"
+            android:persistentDrawingCache="animation" >
+        </android.support.v4.view.ViewPager>
+
+        <TextView
+            android:id="@+id/tv_vp_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:layout_marginLeft="12dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/dot_group_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray" >
+    </View>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.65"
+        android:background="#DCDCDC"
+        android:baselineAligned="false" >
+
+        <!-- android:background="@drawable/bg_main_left_top" -->
+        <!-- android:background="@drawable/bg_main_left_top" -->
+
+        <RelativeLayout
+            android:id="@+id/rl_main_show_first"
+            android:layout_width="290dp"
+            android:layout_height="250dp"
+            android:layout_gravity="start"
+            android:layout_marginBottom="3.5dp"
+            android:layout_marginRight="3.5dp"
+            android:layout_marginTop="3.5dp"
+            android:background="@drawable/bg_main_left_top"
+            android:clickable="true"
+            android:focusable="true" >
+
+            <ImageView
+                android:id="@+id/imgbt_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="80dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:src="@drawable/search_72px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgbt_1"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:text="券卡查询"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <!-- android:background="@drawable/bg_mian_right_top" -->
+
+        <RelativeLayout
+            android:id="@+id/rl_main_show_second"
+            android:layout_width="290dp"
+            android:layout_height="250dp"
+            android:layout_gravity="end"
+            android:layout_marginBottom="3.5dp"
+            android:layout_marginLeft="3.5dp"
+            android:layout_marginTop="3.5dp"
+            android:background="@drawable/bg_mian_right_top"
+            android:clickable="true"
+            android:focusable="true" >
+
+            <ImageView
+                android:id="@+id/imgbt_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/note_72px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgbt_2"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="10dp"
+                android:text="门店订单"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <!-- android:background="@drawable/bg_main_left_bottom" -->
+
+        <RelativeLayout
+            android:id="@+id/rl_main_show_third"
+            android:layout_width="290dp"
+            android:layout_height="250dp"
+            android:layout_gravity="bottom|start"
+            android:layout_marginBottom="3.5dp"
+            android:layout_marginRight="3.5dp"
+            android:layout_marginTop="3.5dp"
+            android:background="@drawable/bg_main_left_bottom"
+            android:clickable="true"
+            android:focusable="true" >
+
+            <ImageView
+                android:id="@+id/imgbt_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/send_72" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgbt_3"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:text="券卡核销"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <!-- android:background="@drawable/bg_main_right_bottom" -->
+
+        <RelativeLayout
+            android:id="@+id/rl_main_show_forth"
+            android:layout_width="290dp"
+            android:layout_height="250dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="3.5dp"
+            android:layout_marginLeft="3.5dp"
+            android:layout_marginTop="3.5dp"
+            android:background="@drawable/bg_main_right_bottom"
+            android:clickable="true"
+            android:focusable="true" >
+
+            <ImageView
+                android:id="@+id/imgbt_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/blog_72px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgbt_4"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="10dp"
+                android:text="核销记录"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_main_show_mid"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@drawable/bg_main_radiu_buttom"
+            android:clickable="true"
+            android:focusable="true" >
+
+            <ImageView
+                android:id="@+id/imgbt_mid"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/sale_72" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgbt_mid"
+                android:layout_centerHorizontal="true"
+                android:text="券卡销售"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/title" >
+    </View>
+
+    <RadioGroup
+        android:id="@+id/tab_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@color/gainsboro"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rbService"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/tab_selector_main"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="主页"
+            android:textColor="@drawable/tab_selector_tv_color"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rbBlackList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/tab_selector_card_manage"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="我的订单"
+            android:textColor="@drawable/tab_selector_tv_color"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rbSetting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/tab_selector_more"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="更多"
+            android:textColor="@drawable/tab_selector_tv_color"
+            android:textSize="10sp" />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true" >
+
+        <ImageButton
+            android:id="@+id/img_bt_card_search_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/app_name"
+            android:padding="6dp"
+            android:src="@drawable/white_left" />
+
+        <TextView
+            android:id="@+id/tv_card_search_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="券卡查询"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/main_layout_select"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/tv_card_search_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="6dp"
+            android:text="卡号:"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/et_card_search_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_card_search_number"
+            android:background="@android:color/transparent"
+            android:ems="30"
+            android:hint="请输入卡号"
+            android:padding="10dp"
+            android:textSize="13sp" />
+
+        <ImageButton
+            android:id="@+id/img_bt_card_search_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@id/et_card_search_number"
+            android:background="@android:color/transparent"
+            android:src="@drawable/camera_32" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:padding="8dp" >
+
+        <Button
+            android:id="@+id/bt_card_search_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_set"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_card_search_type_change"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_card_search_submit"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:gravity="end"
+            android:padding="6dp"
+            android:text="输入遇到问题?"
+            android:textColor="@color/title"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/online_user_list_item_textview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|end"
+    android:gravity="end"
+    android:padding="15dp"
+    android:text="12345"
+    android:textColor="@color/white"
+    android:textSize="14sp" >
+
+</TextView>

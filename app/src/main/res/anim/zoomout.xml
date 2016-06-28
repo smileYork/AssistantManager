@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/decelerate_interpolator" >
+
+    <!-- config_mediumAnimTime @android:integer/config_longAnimTime     android:zAdjustment="normal"  @android:anim/decelerate_interpolator -->
+    <!--
+         <scale
+        android:duration="1000"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:pivotX="50%p"
+        android:pivotY="50%p"
+        android:toXScale=".5"
+        android:toYScale=".5" />
+    -->
+
+    <alpha
+        android:duration="5000"
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0" />
+
+    <!--
+    fromAlpha:开始时透明度   
+    toAlpha： 结束时透明度   
+    duration：动画持续时间
+    -->
+
+</set>
